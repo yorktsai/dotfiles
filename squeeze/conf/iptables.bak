@@ -1,0 +1,12 @@
+*filter
+-A INPUT -s 127.0.0.1 -j ACCEPT
+-A INPUT -s 192.168.0.0/16 -j ACCEPT
+-A INPUT -s 72.36.0.0/16 -j ACCEPT
+-A INPUT -s 140.113.0.0/16 -j ACCEPT
+-A INPUT -s 220.133.40.50 -j ACCEPT
+
+#-A INPUT -p tcp -m tcp --dport 22 -j REJECT
+
+-A INPUT -j ACCEPT
+
+COMMIT

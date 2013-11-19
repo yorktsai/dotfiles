@@ -1,0 +1,1 @@
+Acquire::http::Proxy "http://twproxy.trendmicro.com:8080/";

@@ -1,0 +1,18 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug eth1
+iface eth1 inet static
+	address 140.113.216.136
+	netmask 255.255.255.0
+	network 140.113.216.0
+	broadcast 140.113.216.255
+	gateway 140.113.216.254
+	# dns-* options are implemented by the resolvconf package, if installed
+	dns-nameservers 140.113.6.2
+	dns-search luckystar.csie.nctu.edu.tw

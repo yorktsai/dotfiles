@@ -1,0 +1,16 @@
+#deb http://apt.debian.org.tw/ unstable main contrib non-free
+#deb http://debian.csie.nctu.edu.tw/debian/ squeeze main contrib non-free
+#deb-src http://debian.csie.nctu.edu.tw/debian/ squeeze main contrib non-free
+
+#deb http://debian.csie.nctu.edu.tw/debian/ squeeze main contrib non-free
+#deb-src http://debian.csie.nctu.edu.tw/debian/ squeeze main contrib non-free
+
+deb     http://ftp.tw.debian.org/debian/ squeeze main contrib non-free
+deb-src http://ftp.tw.debian.org/debian/ squeeze main contrib non-free
+
+deb http://www.debian-multimedia.org squeeze main non-free
+
+deb http://security.debian.org/ squeeze/updates main contrib non-free
+deb-src http://security.debian.org/ squeeze/updates main contrib non-free
+
+# deb http://www.backports.org/debian squeeze-backports main contrib non-free
