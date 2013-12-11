@@ -4,18 +4,24 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export SVN_EDITOR=/usr/bin/vim
 
 # aws
-export JAVA_HOME="$(/usr/libexec/java_home)"
+#export JAVA_HOME="$(/usr/libexec/java_home)"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 #export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
 #export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
-#export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.5.2.4/jars"
+export AWS_ACCESS_KEY=
+export AWS_SECRET_KEY=
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.5.2/jars"
 
 # bash
 alias mv='mv -i'
 alias cp='cp -i'
 alias rm='rm -i'
+alias python='python3'
 
 # homebrew
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin/:/usr/local/Cellar/php54/5.4.9/bin:/usr/local/share/python:$PATH
+export HOMEBREW_GITHUB_API_TOKEN=
+
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin/:/usr/local/Cellar/php54/5.5.6/bin:/usr/local/share/python3:$PATH
 
 # show git branch in PS1
 function git_branch {
@@ -32,5 +38,4 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 # Dropbox bin
-PATH="${PATH}:/Users/york/Dropbox/bin/ssh:/Users/york/Dropbox/bin"
-export PATH
+export PATH="${PATH}:/Users/york/Dropbox/bin/ssh:/Users/york/Dropbox/bin:/opt/elastic-mapreduce"
