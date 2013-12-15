@@ -30,6 +30,8 @@ syspip() {
    PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
 
+source /usr/local/bin/virtualenvwrapper.sh
+
 # homebrew
 export HOMEBREW_GITHUB_API_TOKEN=
 
