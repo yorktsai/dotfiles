@@ -16,7 +16,19 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.5.2/jars"
 alias mv='mv -i'
 alias cp='cp -i'
 alias rm='rm -i'
+
+# python
 alias python='python3'
+alias pip='pip3'
+
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+# cache pip-installed packages to avoid re-downloading
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+
+syspip() {
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
 
 # homebrew
 export HOMEBREW_GITHUB_API_TOKEN=
