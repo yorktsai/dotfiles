@@ -30,6 +30,7 @@ syspip() {
    PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
 
+VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 
 # homebrew
