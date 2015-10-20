@@ -1,8 +1,0 @@
-<Location />
-  Options FollowSymLinks +ExecCGI
-  AddHandler cgi-script .cgi
-  AuthName "dev"
-  AuthType Basic
-  AuthUserFile /etc/apache2/htpasswd
-  Require valid-user
-</Location>
