@@ -25,8 +25,13 @@ fi
 PATH=/usr/local/bin:$PATH
 
 # virtualenvwrapper
-
 export VIRTUALENVWRAPPER_PYTHON=`which python3`
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace
 source /usr/local/bin/virtualenvwrapper.sh
+
+# homebrew
+if [ -r ~/.private ]
+then
+    source ~/.private
+fi
