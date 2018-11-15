@@ -11,6 +11,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins
 Plugin 'derekwyatt/vim-scala'
 Plugin 'GEverding/vim-hocon'
+Plugin 'solarnz/thrift.vim'
+Plugin 'avakhov/vim-yaml'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
